@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
 import {Navbar, Container, NavDropdown, Nav} from "react-bootstrap"
+import logo from '../assets/img/logo.svg'
+import navIcon1 from '../assets/img/nav-icon1.svg'
+import navIcon2 from '../assets/img/nav-icon2.svg'
+import navIcon3 from '../assets/img/nav-icon3.svg'
 
 export default function Navbar() {
     // Using use effect to detect scrolling and the link which is active
@@ -27,7 +31,9 @@ export default function Navbar() {
     return (
         <Navbar bg="light" expand="lg" className={scrolled ? 'scrolled' : ""}>
           <Container>
-            <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+            <Navbar.Brand href="#home">
+                <img src={logo} alt="logo"></img>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"> 
                 <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
@@ -39,9 +45,9 @@ export default function Navbar() {
               </Nav>
               <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><img src={''} alt="" /></a>
-                    <a href="#"><img src={''} alt="" /></a>
-                    <a href="#"><img src={''} alt="" /></a>
+                    <a href="#"><img src={navIcon1} alt="" /></a>
+                    <a href="#"><img src={navIcon2} alt="" /></a>
+                    <a href="#"><img src={navIcon3} alt="" /></a>
                 </div>
                 <button className="vvd" onClick={() => console.log('connect')}> <span>Let's Connect</span></button>
               </span>
