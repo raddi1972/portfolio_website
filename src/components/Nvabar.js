@@ -50,13 +50,12 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/rudransh-dixit-a785a61ba/"><img src={navIcon1} alt="" /></a>
+                <a href="https://www.instagram.com/raddi1972/"><img src={navIcon3} alt="" /></a>
               </div>
-              <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              <button onClick={() => {
+                window.open("https://twitter.com/72raddi")
+              }} className="vvd"><span>Twitter</span></button>
             </span>
           </Navbar.Collapse>
         </Container>
