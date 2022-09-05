@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/p1.png";
+import projImg2 from "../assets/img/p2.png";
+import projImg3 from "../assets/img/p3.png";
+import projImg4 from "../assets/img/p4.png";
+import projImg5 from "../assets/img/p5.jpg";
+import projImg6 from "../assets/img/p6.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,34 +14,34 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Game Engine",
+      description: "Build this game engine out of interest in summer.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Carpool App",
+      description: "This app was made for hackathon in Synergy. Which we won!",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Hilden",
+      description: "For IIITB SOC I worked on a compiler for a language called Hilden",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "Warranty Management System for Flipkart",
+      description: "Made a warranty management system on blockchain for Flipkart grid hackathon.",
+      imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "AnkiDroid",
+      description: "Worked on AnkiDroid for some time while working on open source projects",
+      imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Vim like Editor in Rust",
+      description: "Made a vim Like Editor in Rust!",
+      imgUrl: projImg6,
     },
   ];
 
